@@ -1,0 +1,948 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Look in _includes/theme for <head> and <body> definitions -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Profile Settings | DNHS Flocker</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Profile Settings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Social Media for Del Norte High School" />
+<meta property="og:description" content="Social Media for Del Norte High School" />
+<link rel="canonical" href="http://localhost:4100/flocker_frontend/profile" />
+<meta property="og:url" content="http://localhost:4100/flocker_frontend/profile" />
+<meta property="og:site_name" content="DNHS Flocker" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Profile Settings" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Social Media for Del Norte High School","headline":"Profile Settings","url":"http://localhost:4100/flocker_frontend/profile"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/flocker_frontend/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4100/flocker_frontend/feed.xml" title="DNHS Flocker" />
+
+<!-- Include favicons --><link rel="shortcut icon" type="image/x-icon" href="/flocker_frontend/images/favicon.ico"><!-- Include Primer CSS for styling -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<!-- Include Hypothesis annotations script if annotations are enabled --><!-- Include KaTeX and MathJax for rendering mathematical expressions if use_math is enabled -->
+
+
+<script>
+/**
+ * Function to wrap images with a figure and caption if they have a title attribute.
+ * This function is executed when the window loads.
+ */
+function wrap_img(fn) {
+    // Check if the document is already loaded
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        // Select all images within elements with the class 'post'
+        var elements = document.querySelectorAll(".post img");
+        // Iterate over each image element
+        Array.prototype.forEach.call(elements, function(el, i) {
+            // Check if the image has a title attribute and is not an emoji
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                // Create a figcaption element for the caption
+                const caption = document.createElement('figcaption');
+                // Create a text node with the title attribute value
+                var node = document.createTextNode(el.getAttribute("title"));
+                // Append the text node to the figcaption element
+                caption.appendChild(node);
+                // Create a figure element to wrap the image and caption
+                const wrapper = document.createElement('figure');
+                // Add the 'image' class to the figure element
+                wrapper.className = 'image';
+                // Insert the figure element before the image
+                el.parentNode.insertBefore(wrapper, el);
+                // Remove the image from its original position
+                el.parentNode.removeChild(el);
+                // Append the image and caption to the figure element
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else {
+        // If the document is not loaded, add an event listener to execute the function when it is
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+// Execute the wrap_img function when the window loads
+window.onload = wrap_img;
+</script>
+
+<script>
+/**
+ * Function to add a link icon to anchor tags with the class 'anchor-link'.
+ * This function is executed when the DOM content is loaded.
+ */
+document.addEventListener("DOMContentLoaded", function(){
+    // Select all elements with the class 'anchor-link'
+    var elem = document.querySelectorAll(".anchor-link");
+    // Iterate over each element and set its inner HTML to a Font Awesome link icon
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+});
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/flocker_frontend/">DNHS Flocker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/flocker_frontend/academics/">Academics</a><a class="page-link" href="/flocker_frontend/sports/">Sports</a><a class="page-link" href="/flocker_frontend/events/">Events</a><a class="page-link" href="/flocker_frontend/hangouts/">Instabox</a><a class="page-link" href="/flocker_frontend/sports/">Sports</a><a class="page-link" href="/flocker_frontend/login">Login</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header"><table>
+    <tr>
+        <td><img src="/flocker_frontend/images/logo.png" height="60" title="Home" alt=""></td>
+        <td><a href="/flocker_frontend/academics/math">Integrated</a></td>
+        <td><a href="/flocker_frontend/academics/english">APEL</a></td>
+        <td><a href="/flocker_frontend/electives/band">Orchestra</a></td>
+        <td><a href="/flocker_frontend/electives/compsci">CompSci</a></td>
+        <td><a href="/flocker_frontend/hangouts/community">Panera</a></td>
+        <td id="loginArea"><a href="/flocker_frontend/login">Profile</a></td>
+    </tr>
+</table>
+
+<script type="module">
+    import { pythonURI, fetchOptions } from '/flocker_frontend/assets/js/api/config.js';
+
+    document.addEventListener('DOMContentLoaded', function() {
+    getCredentials() // Call the function to get credentials
+        .then(data => {
+            const loginArea = document.getElementById('loginArea');
+            if (data) { // Update the login area based on the data
+                // User is authenticated, replace "Login" with User's name
+                loginArea.innerHTML = `
+                    <div class="dropdown">
+                        <button class="dropbtn">${data.name}</button>
+                        <div class="dropdown-content">
+                            <a href="/flocker_frontend/logout">Logout</a>
+                            <a href="/flocker_frontend/profile">Profile</a>
+                            <a href="/flocker_frontend/analytics">Analytics</a>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // User is not authenticated, then "Login" link is shown
+                loginArea.innerHTML = '<a href="/flocker_frontend/login">Profile</a>';
+            }
+        })
+        .catch(err => { // General error handler
+            console.error("Error fetching credentials: ", err);
+            // Handle any errors that occurred during getCredentials
+        });
+    });
+
+    function getCredentials() {
+        const URL = pythonURI + '/api/id';
+        return fetch(URL, fetchOptions)
+            .then(response => { // API response handler 
+                if (response.status !== 200) {
+                    console.error("HTTP status code: " + response.status);
+                    return null; // prepares to stop the chain by returning null.
+                }
+                return response.json(); // plans to continue the chain with the data.
+            })
+            .then(data => { // Data handler from the previous promise  
+                if (data === null) return null; // stops the chain, returns null.
+                console.log(data); // logs data with should contain uid, name, etc.
+                return data; // returns data to caller 
+            })
+            .catch(err => { // General error handler
+                console.error("Fetch error: ", err);
+                return null;
+            });
+    }
+
+</script><h1 class="post-title p-name" itemprop="name headline">Profile Settings</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="" itemprop="datePublished">
+        
+      </time>
+    </p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody"><div class="profile-container">
+ <div class="card">
+   <form>
+     <div>
+       <label for="newUid">Enter New UID:</label>
+       <input type="text" id="newUid" placeholder="New UID" />
+     </div>
+     <div>
+       <label for="newName">Enter New Name:</label>
+       <input type="text" id="newName" placeholder="New Name" />
+     </div>
+      <div>
+       <label for="newPassword">Enter New Password:</label>
+       <input type="text" id="newPassword" placeholder="New Password" />
+     </div>
+     <br />
+     <div>
+       <label for="kasmServerNeeded">Kasm Server Needed:
+       <input type="checkbox" id="kasmServerNeeded" onclick="toggleKasmServerNeeded()" />
+       </label>
+     </div>
+     <br />
+     <div>
+       <label for="sectionDropdown">Select and Add Section:</label>
+       <div class="icon-container">
+         <select id="sectionDropdown">
+           <!-- Options will be dynamically populated -->
+         </select>
+         <i class="fas fa-plus" onclick="addSection()"></i>
+       </div>
+     </div>
+     <table>
+       <thead>
+         <tr>
+           <th>Abbreviation</th>
+           <th>Name</th>
+           <th>Year</th>
+         </tr>
+       </thead>
+       <tbody id="profileResult">
+         <!-- Table rows will be dynamically populated -->
+       </tbody>
+     </table>
+     <label for="profilePicture" class="file-icon"> Upload Profile Picture <i class="fas fa-upload"></i> <!-- Replace this with your desired icon -->
+     </label>
+     <input type="file" id="profilePicture" accept="image/*" onchange="saveProfilePicture()" />
+     <div class="image-container" id="profileImageBox">
+         <!-- Profile picture will be displayed here -->
+     </div>
+     <p id="profile-message" style="color: red;"></p>
+   </form>
+ </div>
+</div>
+
+<script type="module">
+// Import fetchOptions from config.js
+import {pythonURI, fetchOptions } from '/flocker_frontend/assets/js/api/config.js';
+// Import functions from config.js
+import { putUpdate, postUpdate, deleteData, logoutUser } from "/flocker_frontend/assets/js/api/profile.js";
+
+
+
+
+// Global variable to hold predefined sections
+let predefinedSections = [];
+
+
+// Function to fetch  sections from kasm2_backend
+async function fetchPredefinedSections() {
+    const URL = pythonURI + "/api/section";
+
+
+    try {
+        const response = await fetch(URL, fetchOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch predefined sections: ${response.status}`);
+        }
+
+
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching predefined sections:', error.message);
+        return []; // Return empty array on error
+    }
+}
+
+
+// Function to populate section dropdown menu
+function populateSectionDropdown(predefinedSections) {
+    const sectionDropdown = document.getElementById('sectionDropdown');
+    sectionDropdown.innerHTML = ''; // Clear existing options
+
+
+    predefinedSections.forEach(section => {
+        const option = document.createElement('option');
+        option.value = section.abbreviation;
+        option.textContent = `${section.abbreviation} - ${section.name}`;
+        sectionDropdown.appendChild(option);
+    });
+
+
+    // Display sections in the table
+    displayProfileSections();
+}
+
+
+// Global variable to hold user sections
+let userSections = [];
+
+
+// Function to add a section
+window.addSection = async function () {
+    const dropdown = document.getElementById('sectionDropdown');
+    const selectedOption = dropdown.options[dropdown.selectedIndex];
+    const abbreviation = selectedOption.value;
+    const name = selectedOption.textContent.split(' ').slice(1).join(' ');
+
+
+    if (!abbreviation || !name) {
+        document.getElementById('profile-message').textContent = 'Please select a section from the dropdown.';
+        return;
+    }
+
+
+    // Clear error message
+    document.getElementById('profile-message').textContent = '';
+
+
+    // Add section to userSections array if not already added
+    const sectionExists = userSections.some(section => section.abbreviation === abbreviation && section.name === name);
+    if (!sectionExists) {
+        userSections.push({ abbreviation, name });
+
+
+        // Display added section in the table
+        displayProfileSections();
+
+
+        // Save sections immediately
+        await saveSections();
+    }
+}
+
+
+// Function to display added sections in the table
+function displayProfileSections() {
+       const tableBody = document.getElementById('profileResult');
+       tableBody.innerHTML = ''; // Clear existing rows
+
+
+       // Create a new row and cell for each section
+       userSections.forEach(section => {
+           const tr = document.createElement('tr');
+           const abbreviationCell = document.createElement('td');
+           const nameCell = document.createElement('td');
+           const yearCell = document.createElement('td');
+
+
+           // Fill in the corresponding cells with data
+           abbreviationCell.textContent = section.abbreviation;
+           nameCell.textContent = section.name;
+           yearCell.textContent = section.year;
+
+
+           tr.appendChild(abbreviationCell);
+           tr.appendChild(nameCell);
+           tr.appendChild(yearCell);
+
+
+           // Add the row to table
+           tableBody.appendChild(tr);
+       });
+   }
+
+
+// Function to save sections in the specified format
+async function saveSections() {
+   const sectionAbbreviations = userSections.map(section => section.abbreviation);
+
+
+   const sectionsData = {
+       sections: sectionAbbreviations
+   };
+
+
+   const URL = pythonURI + "/api/user/section";
+
+
+   const options = {
+       URL,
+       body: sectionsData,
+       message: 'profile-message',
+       callback: async () => {
+           console.log('Sections saved successfully!');
+           await fetchDataAndPopulateTable();
+       }
+   };
+
+
+   try {
+       await postUpdate(options);
+   } catch (error) {
+       console.error('Error saving sections:', error.message);
+       document.getElementById('profile-message').textContent = 'Error saving sections: ' + error.message;
+   }
+}
+
+
+// Function to fetch data from the backend and populate the table
+async function fetchDataAndPopulateTable() {
+    const URL = pythonURI + "/api/user/section"; // Endpoint to fetch sections data
+
+
+    try {
+        const response = await fetch(URL, fetchOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch sections: ${response.status}`);
+        }
+
+
+        const sectionsData = await response.json();
+        updateTableWithData(sectionsData); // Call function to update table with fetched data
+    } catch (error) {
+        console.error('Error fetching sections:', error.message);
+        // Handle error display or fallback mechanism
+    }
+}
+
+
+// Function to update table with fetched data
+function updateTableWithData(data) {
+   const tableBody = document.getElementById('profileResult');
+   tableBody.innerHTML = '';
+
+
+   data.sections.forEach((section, index) => {
+       const tr = document.createElement('tr');
+       const abbreviationCell = document.createElement('td');
+       const nameCell = document.createElement('td');
+       const yearCell = document.createElement('td');
+
+
+      
+       abbreviationCell.textContent = section.abbreviation;
+       nameCell.textContent = section.name;
+       yearCell.textContent = section.year;
+
+
+
+
+       const trashIcon = document.createElement('i');
+       trashIcon.className = 'fas fa-trash-alt trash-icon';
+       trashIcon.style.marginLeft = '10px';
+       abbreviationCell.appendChild(trashIcon);
+
+
+       trashIcon.addEventListener('click', async function (event) {
+           event.preventDefault();
+           const URL = pythonURI + "/api/user/section";
+          
+           // Remove the row from the table
+           tr.remove();
+
+
+           const options = {
+               URL,
+               body: { sections: [section.abbreviation] },
+               message: 'profile-message',
+               callback: async () => {
+                   console.log('Section deleted successfully!');
+                   await fetchDataAndPopulateTable();
+               }
+           };
+
+
+           try {
+               await deleteData(options);
+           } catch (error) {
+               console.error('Error deleting section:', error.message);
+               document.getElementById('profile-message').textContent = 'Error deleting section: ' + error.message;
+           }
+       });
+
+
+
+
+     
+
+
+
+
+      yearCell.classList.add('editable'); // Make year cell editable
+      yearCell.innerHTML = `${section.year} <i class="fas fa-pencil-alt edit-icon" style="margin-left: 10px;"></i>`;
+
+
+       // Make the year cell editable
+       yearCell.addEventListener('click', function () {
+           const input = document.createElement('input');
+           input.type = 'text';
+           input.value = section.year;
+           input.className = 'edit-input';
+           yearCell.innerHTML = '';
+           yearCell.appendChild(input);
+
+
+           input.focus();
+
+
+           input.addEventListener('blur', async function () {
+               const newYear = input.value;
+               const URL = pythonURI + "/api/user/section";
+               const options = {
+                   URL,
+                   body: { section: { abbreviation: section.abbreviation, year: newYear } },
+                   message: 'profile-message',
+                   callback: async () => {
+                       console.log('Year updated successfully!');
+                       await fetchDataAndPopulateTable();
+                   }
+               };
+
+
+               try {
+                   await putUpdate(options);
+               } catch (error) {
+                   console.error('Error updating year:', error.message);
+                   document.getElementById('profile-message').textContent = 'Error updating year: ' + error.message;
+               }
+
+
+               yearCell.textContent = newYear;
+           });
+
+
+           input.addEventListener('keydown', function (event) {
+               if (event.key === 'Enter') {
+                   input.blur();
+               }
+           });
+       });
+       tr.appendChild(abbreviationCell);
+       tr.appendChild(nameCell);
+       tr.appendChild(yearCell);
+
+
+       tableBody.appendChild(tr);
+   });
+
+
+  
+}
+
+
+// Function to fetch user profile data
+async function fetchUserProfile() {
+    const URL = pythonURI + "/api/id/pfp"; // Endpoint to fetch user profile data
+
+
+    try {
+        const response = await fetch(URL, fetchOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch user profile: ${response.status}`);
+        }
+
+
+        const profileData = await response.json();
+        displayUserProfile(profileData);
+    } catch (error) {
+        console.error('Error fetching user profile:', error.message);
+        // Handle error display or fallback mechanism
+    }
+}
+
+
+// Function to display user profile data
+function displayUserProfile(profileData) {
+    const profileImageBox = document.getElementById('profileImageBox');
+    if (profileData.pfp) {
+        const img = document.createElement('img');
+        img.src = `data:image/jpeg;base64,${profileData.pfp}`;
+        img.alt = 'Profile Picture';
+        profileImageBox.innerHTML = ''; // Clear existing content
+        profileImageBox.appendChild(img); // Append new image element
+    } else {
+        profileImageBox.innerHTML = '<p>No profile picture available.</p>';
+    }
+
+
+    // Display other profile information as needed
+    // Example: Update HTML elements with profileData.username, profileData.email
+}
+
+
+// Function to save profile picture
+window.saveProfilePicture = async function () {
+
+
+    const fileInput = document.getElementById('profilePicture');
+    const file = fileInput.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function() {
+            const profileImageBox = document.getElementById('profileImageBox');
+            profileImageBox.innerHTML = `<img src="${reader.result}" alt="Profile Picture">`;
+        };
+        reader.readAsDataURL(file);
+    }
+
+
+    if (!file) return;
+
+
+    try {
+        const base64String = await convertToBase64(file);
+        await sendProfilePicture(base64String);
+        console.log('Profile picture uploaded successfully!');
+
+
+    } catch (error) {
+        console.error('Error uploading profile picture:', error.message);
+        // Handle error display or fallback mechanism
+    }
+}
+
+
+
+// Function to convert file to base64
+async function convertToBase64(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result.split(',')[1]); // Remove the prefix part of the result
+        reader.onerror = error => reject(error);
+        reader.readAsDataURL(file);
+    });
+}
+
+
+// Function to send profile picture to server
+async function sendProfilePicture(base64String) {
+   const URL = pythonURI + "/api/id/pfp"; // Adjust endpoint as needed
+
+
+   // Create options object for PUT request
+   const options = {
+       URL,
+       body: { pfp: base64String },
+       message: 'profile-message', // Adjust the message area as needed
+       callback: () => {
+           console.log('Profile picture uploaded successfully!');
+           // Handle success response as needed
+       }
+   };
+
+
+   try {
+       await putUpdate(options);
+   } catch (error) {
+       console.error('Error uploading profile picture:', error.message);
+       document.getElementById('profile-message').textContent = 'Error uploading profile picture: ' + error.message;
+   }
+}
+  // Function to update UI with new UID and change placeholder
+window.updateUidField = function(newUid) {
+  const uidInput = document.getElementById('newUid');
+  uidInput.value = newUid;
+  uidInput.placeholder = newUid;
+}
+
+
+// Function to update UI with new Name and change placeholder
+window.updateNameField = function(newName) {
+  const nameInput = document.getElementById('newName');
+  nameInput.value = newName;
+  nameInput.placeholder = newName;
+}
+
+
+
+
+
+
+
+
+// Function to change UID
+window.changeUid = async function(uid) {
+   if (uid) {
+       const URL = pythonURI + "/api/user"; // Adjusted endpoint
+
+
+       const options = {
+           URL,
+           body: { uid },
+           message: 'uid-message', // Adjust the message area as needed
+           callback: () => {
+               alert("You updated your Github ID, so you will automatically be logged out. Be sure to remember your new github id to log in!");
+               console.log('UID updated successfully!');
+               window.updateUidField(uid);
+               window.location.href = '/portfolio_2025/login'
+           }
+       };
+
+
+       try {
+           await putUpdate(options);
+       } catch (error) {
+           console.error('Error updating UID:', error.message);
+           document.getElementById('uid-message').textContent = 'Error updating UID: ' + error.message;
+       }
+   }
+}
+
+
+window.changePassword = async function(password) {
+   if (password) {
+       const URL = pythonURI + "/api/user"; // Adjusted endpoint
+
+
+       const options = {
+           URL,
+           body: { password },
+           message: 'password-message', // Adjust the message area as needed
+           callback: () => {
+               console.log('Password updated successfully!');
+               window.location.href = '/portfolio_2025/login'
+
+
+           }
+       };
+
+
+       try {
+            alert("You updated your password, so you will automatically be logged out. Be sure to remember your password!");
+           await putUpdate(options);
+           await logoutUser();
+       } catch (error) {
+           console.error('Error updating password:', error.message);
+           document.getElementById('password-message').textContent = 'Error updating password: ' + error.message;
+       }
+   }
+}
+
+
+
+
+
+
+
+
+// Function to change Name
+window.changeName = async function(name) {
+   if (name) {
+       const URL = pythonURI + "/api/user";
+       const options = {
+           URL,
+           body: { name },
+           message: 'name-message',
+           callback: () => {
+               console.log('Name updated successfully!');
+               window.updateNameField(name);
+           }
+       };
+       try {
+           await putUpdate(options);
+       } catch (error) {
+           console.error('Error updating Name:', error.message);
+           document.getElementById('name-message').textContent = 'Error updating Name: ' + error.message;
+       }
+   }
+}
+
+
+// Event listener to trigger updateUid function when UID field is changed
+document.getElementById('newUid').addEventListener('change', function() {
+    const uid = this.value;
+    window.changeUid(uid);
+
+
+});
+
+
+// Event listener to trigger updateName function when Name field is changed
+document.getElementById('newName').addEventListener('change', function() {
+    const name = this.value;
+    window.changeName(name);
+
+
+});
+
+
+document.getElementById('newPassword').addEventListener('change', function() {
+    const password = this.value;
+    window.changePassword(password);
+
+
+});
+
+
+
+
+
+
+
+
+
+
+window.fetchKasmServerNeeded = async function() {
+ const URL = pythonURI + "/api/id"; // Adjusted endpoint
+ try {
+     const response = await fetch(URL, fetchOptions);
+     if (!response.ok) {
+         throw new Error(`Failed to fetch kasm_server_needed: ${response.status}`);
+     }
+     const userData = await response.json();
+     const kasmServerNeeded = userData.kasm_server_needed
+     // Update checkbox state based on fetched value
+     const checkbox = document.getElementById('kasmServerNeeded');
+     checkbox.checked = kasmServerNeeded;
+ } catch (error) {
+     console.error('Error fetching kasm_server_needed:', error.message);
+     // Handle error display or fallback mechanism
+ }
+};
+
+
+// Function to toggle kasm_server_needed attribute on checkbox change
+window.toggleKasmServerNeeded = async function() {
+   const checkbox = document.getElementById('kasmServerNeeded');
+   const newKasmServerNeeded = checkbox.checked;
+   const URL = pythonURI + "/api/user"; // Adjusted endpoint
+   const options = {
+       URL,
+       body: { kasm_server_needed: newKasmServerNeeded },
+       message: 'kasm-server-message', // Adjust the message area as needed
+       callback: () => {
+           console.log('Kasm Server Needed updated successfully!');
+       }
+   };
+
+
+   try {
+       await putUpdate(options);
+   } catch (error) {
+       console.error('Error updating kasm_server_needed:', error.message);
+       document.getElementById('kasm-server-message').textContent = 'Error updating kasm_server_needed: ' + error.message;
+   }
+}
+   window.fetchUid = async function() {
+    const URL = pythonURI + "/api/id"; // Adjusted endpoint
+
+
+    try {
+        const response = await fetch(URL, fetchOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch UID: ${response.status}`);
+        }
+
+
+        const data = await response.json();
+        return data.uid;
+    } catch (error) {
+        console.error('Error fetching UID:', error.message);
+        return null;
+    }
+};
+
+
+// Function to fetch Name from backend
+window.fetchName = async function() {
+    const URL = pythonURI + "/api/id"; // Adjusted endpoint
+
+
+    try {
+        const response = await fetch(URL, fetchOptions);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch Name: ${response.status}`);
+        }
+
+
+        const data = await response.json();
+        return data.name;
+    } catch (error) {
+        console.error('Error fetching Name:', error.message);
+        return null;
+    }
+};
+
+
+// Function to set placeholders for UID and Name
+window.setPlaceholders = async function() {
+    const uidInput = document.getElementById('newUid');
+    const nameInput = document.getElementById('newName');
+
+
+    try {
+        const uid = await window.fetchUid();
+        const name = await window.fetchName();
+
+
+        if (uid !== null) {
+            uidInput.placeholder = uid;
+        }
+        if (name !== null) {
+            nameInput.placeholder = name;
+        }
+    } catch (error) {
+        console.error('Error setting placeholders:', error.message);
+    }
+};
+
+
+// Call fetchPredefinedSections and initializeProfileSetup when DOM content is loaded
+document.addEventListener('DOMContentLoaded', async function () {
+    try {
+        predefinedSections = await fetchPredefinedSections();
+        console.log('Predefined Sections:', predefinedSections);
+        populateSectionDropdown(predefinedSections); // Populate dropdown with fetched sections
+        await fetchUserProfile(); // Fetch user profile data
+        await fetchDataAndPopulateTable(); // Fetch and populate table with user sections
+        await fetchKasmServerNeeded();
+        await setPlaceholders();
+    } catch (error) {
+        console.error('Initialization error:', error.message);
+        // Handle initialization error gracefully
+    }
+});
+
+
+</script>
+
+
+  </div><a class="u-url" href="/flocker_frontend/profile" hidden></a>
+</article>
+
+    </div>
+  </main><footer class="site-footer h-card">
+    <data class="u-url" href="/flocker_frontend/"></data>
+  
+    <div class="wrapper">
+  
+      <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/flocker_frontend/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://x.com/NighthawkCoding/" target="_blank" title="x">
+    <svg class="svg-icon grey">
+      <use xlink:href="/flocker_frontend/assets/minima-social-icons.svg#x"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/@nighthawkcodingsociety2868" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/flocker_frontend/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+  
+    </div>
+  
+</footer></body>
+</html>
